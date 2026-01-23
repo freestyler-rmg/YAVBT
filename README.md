@@ -14,7 +14,9 @@ date-fns
 
 it should be:
 - easy to understand
-- have example for routing
+✅ sfc example
+✅ have example for routing
+✅ composable example
 - state management example
 - util example
 - able to change head title

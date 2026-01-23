@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
 
 import HelloWorld from '../views/HelloWorld.vue';
+import Boilerplate from '../views/Boilerplate.vue';
 
 const routes = [
   {
@@ -8,6 +9,11 @@ const routes = [
     name: 'HelloWorld',
     component: HelloWorld
   },
+  {
+    path: '/boilerplate',
+    name: 'Boilerplate',
+    component: Boilerplate
+  }
 ];
 
 const router = createRouter({
