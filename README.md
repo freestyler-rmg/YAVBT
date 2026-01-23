@@ -11,3 +11,11 @@ Vue Router
 Vueuse
 Unhead
 date-fns
+
+it should be:
+- easy to understand
+- have example for routing
+- state management example
+- util example
+- able to change head title
+- test unit
