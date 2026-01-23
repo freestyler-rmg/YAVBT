@@ -11,13 +11,17 @@ Vue Router
 Vueuse
 Unhead
 date-fns
+eslint
+prettier
 
 it should be:
-- easy to understand
+
+❌ easy to understand
 ✅ sfc example
 ✅ have example for routing
 ✅ composable example
-- state management example
-- util example
-- able to change head title
-- test unit
+❌ state management example
+❌ util example
+❌ able to change head title
+❌ test unit
+❌ how to use this template

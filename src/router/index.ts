@@ -1,19 +1,19 @@
-import { createRouter, createWebHistory } from 'vue-router';
+import { createRouter, createWebHistory } from "vue-router";
 
-import HelloWorld from '../views/HelloWorld.vue';
-import Boilerplate from '../views/Boilerplate.vue';
+import HelloWorld from "../views/HelloWorld.vue";
+import Boilerplate from "../views/Boilerplate.vue";
 
 const routes = [
   {
-    path: '/',
-    name: 'HelloWorld',
-    component: HelloWorld
+    path: "/",
+    name: "HelloWorld",
+    component: HelloWorld,
   },
   {
-    path: '/boilerplate',
-    name: 'Boilerplate',
-    component: Boilerplate
-  }
+    path: "/boilerplate",
+    name: "Boilerplate",
+    component: Boilerplate,
+  },
 ];
 
 const router = createRouter({
