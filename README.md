@@ -1,20 +1,22 @@
-# Vue 3 + TypeScript + Vite
+# Yet Another Vue Boilerplate Template
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+It's kinda a hassle to setup every Vue SPA project from zero. The purpose of this boilerplate is that it can be a "cheatsheet" and a learning material for best practice of Vue structural too.
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+So every time I forgot how to use certain Vue features or library, I can go back to this template and re-learn how things works.
+
+### Included
 
 Axios
 Tailwind
 Pinia
 Vue Router
-Vueuse
+VueUse
 Unhead
-date-fns
-eslint
-prettier
+Date-fns
+Eslint
+Prettier
 
-it should be:
+#### Todos
 
 ❌ comments
 ✅ sfc example
@@ -26,3 +28,4 @@ it should be:
 ✅ able to change head title
 ❌ test unit
 ❌ how to use this template
+❌ example for typing
