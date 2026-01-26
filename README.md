@@ -16,12 +16,13 @@ prettier
 
 it should be:
 
-❌ easy to understand
+❌ comments
 ✅ sfc example
 ✅ have example for routing
 ✅ composable example
-❌ state management example
+✅ state management example
+✅ axios example
 ❌ util example
-❌ able to change head title
+✅ able to change head title
 ❌ test unit
 ❌ how to use this template

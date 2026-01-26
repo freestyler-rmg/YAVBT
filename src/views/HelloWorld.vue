@@ -1,8 +1,16 @@
 <script setup lang="ts">
+// 📜 CODE BLOCK - init
 import SimpleProp from '../components/SimpleProp.vue';
 import SimpleNamedSlot from '../components/SimpleNamedSlot.vue';
 import { useQuoteStore } from '../stores/quote';
 const quoteStore = useQuoteStore();
+
+// 📜 CODE BLOCK - head content
+import { useDefaultHead } from '../composables/useDefaultHead';
+
+useDefaultHead({
+  siteName: 'Hello World!'
+});
 </script>
 
 <template>
@@ -14,8 +22,8 @@ const quoteStore = useQuoteStore();
       {{ quoteStore.quote }}
       <template v-slot:subtitle>{{ quoteStore.author }}</template>
     </simple-named-slot>
-    <router-link to="/boilerplate" class="mt-8 bg-gray-50 px-4 py-2 text-blue-500 rounded"
-      >Boilerplate</router-link
+    <router-link to="/boilerplate-examples" class="mt-8 bg-gray-50 px-4 py-2 text-blue-500 rounded"
+      >Boilerplate and Examples</router-link
     >
   </div>
 </template>
