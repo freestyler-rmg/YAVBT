@@ -1,5 +1,5 @@
 {
-  "name": "YAVBT",
+  "name": "yavbt",
   "private": true,
   "version": "0.1.0",
   "type": "module",
@@ -34,6 +34,7 @@
     "prettier": "3.8.1",
     "typescript": "~5.9.3",
     "typescript-eslint": "^8.53.1",
+    "unplugin-auto-import": "^21.0.0",
     "vite": "npm:rolldown-vite@7.2.5",
     "vue-tsc": "^3.1.4"
   },

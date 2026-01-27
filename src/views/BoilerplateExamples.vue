@@ -3,6 +3,7 @@
 import ExampleComposable from '../components/ExampleComposable.vue';
 import ExampleStateManagement from '../components/ExampleStateManagement.vue';
 import ExampleAxios from '../components/ExampleAxios.vue';
+import ExampleVueuseClickOutside from '@/components/ExampleVueuseClickOutside.vue';
 import { useDefaultHead } from '../composables/useDefaultHead';
 
 useDefaultHead({
@@ -18,6 +19,8 @@ useDefaultHead({
       <ExampleStateManagement />
 
       <ExampleAxios />
+
+      <ExampleVueuseClickOutside />
     </div>
     <div class="mt-4">
       <RouterLink

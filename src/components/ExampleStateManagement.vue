@@ -17,6 +17,6 @@ const quoteStore = useQuoteStore();
       type="text"
       class="border border-gray-300 rounded px-2 py-1 w-80 mt-2"
     />
-    <p class="mt-4 text-xs">After change the input value, checkback the hello world page</p>
+    <p class="mt-4 text-xs">After the input value changed, checkback the hello world page</p>
   </div>
 </template>

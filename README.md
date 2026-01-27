@@ -15,33 +15,50 @@ Clone this repo and just do a `pnpm install`. After I finish ogling my awesome c
 
 Maybe I will create a Node script for removing those files. Yeah, that's a good idea.
 
-### Included
+### What Is Included and What Is That?
 
 - Axios
-- Tailwind CSS
-- Pinia
-- Vue Router
-- VueUse
-- Unhead
-- Eslint
-- Prettier
+
+- [Eslint](https://eslint.org/)
+
+  Getting scold by linter never gets old and always get on my nerve. Yeah, I shouldn't ignore them.
+
+- [Pinia](https://pinia.vuejs.org/)
+
+  The Vue state management library for sharing a state across components or pages. Just remember not to put everything on a flat global state file, it's not fun.
+
+- [Prettier](https://prettier.io/)
+
+- [Tailwind CSS](https://tailwindcss.com/)
+
+  The most popular utility-first CSS framework that's very easy and intuitive to use. But unfortunately it will often make an ugly choo choo train CSS classes and forgot that I can make a reusable clean custom CSS class.
+
+- [Unhead](https://unhead.unjs.io/)
+
+- [unplugin-auto-import](https://www.npmjs.com/package/unplugin-auto-import)
+
+  Used for auto import Vue APIs (so I don't need to write `import { ref } from 'vue'`) and everything inside `\utils\` folder. I added 'util' suffix on each exported variables / functions, so I don't confused where the hell these codes comes from.
+
+- [Vue Router](https://router.vuejs.org/)
+
+- [VueUse](https://vueuse.org/)
 
 #### Todos
 
-- [ ] comments
+- [x] JSDoc (where it needed)
 - [x] sfc example
 - [x] have example for routing
 - [x] composable example
 - [x] state management example
 - [x] axios example
-- [ ] util example
-- [ ] make utils available globally
+- [x] util example
+- [x] make utils available globally
 - [x] able to change head title
 - [ ] test unit
-- [ ] how to use this template
+- [x] how to use this template
 - [x] example for typing
 - [ ] sfc example with defineModel
-- [ ] use @ for absolute path
+- [x] use @ for absolute path
 - [ ] display image from assets and public folder
 - [ ] create a script to 'reset' this template
 - [ ] add to npm repo

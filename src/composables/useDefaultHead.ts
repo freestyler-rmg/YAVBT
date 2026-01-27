@@ -12,7 +12,7 @@ export function useDefaultHead(options: DefaultHeadOptions = {}) {
 
   return useHead({
     titleTemplate: '%s %separator %siteName',
-    title: 'YAVB',
+    title: 'YAVBT',
     templateParams: {
       separator: siteName.length ? '-' : '',
       siteName
