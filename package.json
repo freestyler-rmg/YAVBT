@@ -13,7 +13,6 @@
     "@unhead/vue": "1.10.0-beta.6",
     "@vueuse/core": "^14.1.0",
     "axios": "^1.13.2",
-    "date-fns": "^4.1.0",
     "pinia": "^3.0.4",
     "tailwindcss": "^4.1.18",
     "vue": "^3.5.24",

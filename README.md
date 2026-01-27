@@ -23,7 +23,6 @@ Maybe I will create a Node script for removing those files. Yeah, that's a good 
 - Vue Router
 - VueUse
 - Unhead
-- Date-fns
 - Eslint
 - Prettier
 
@@ -48,4 +47,6 @@ Maybe I will create a Node script for removing those files. Yeah, that's a good 
 - [ ] add to npm repo
 - [ ] add layout
 - [ ] add vee validate
-- [ ] add localStorage example
+- [ ] add vueuse localStorage example
+- [ ] add vueuse onClickOutside example
+- [ ] add vueuse useDateFormat example
