@@ -3,6 +3,7 @@
 import { ref, computed, onMounted } from 'vue';
 import axios from 'axios';
 import { mediaCheck } from '../utils/ExtensionCheck';
+import type { DogApiResponse } from '../types/api';
 
 // 📜 CODE BLOCK - state management example
 const dogPicture = ref<string>('');
@@ -19,7 +20,7 @@ function renderingIsDone() {
 
 onMounted(() => {
   axios
-    .get('https://random.dog/woof.json')
+    .get<DogApiResponse>('https://random.dog/woof.json')
     .then((response) => {
       dogPicture.value = response.data.url;
       isLoading.value = false;

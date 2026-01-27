@@ -7,5 +7,6 @@ export const FILETYPE = {
   wav: 'audio',
   mp3: 'audio',
   mp4: 'video',
-  mov: 'video'
+  mov: 'video',
+  webm: 'video'
 };
