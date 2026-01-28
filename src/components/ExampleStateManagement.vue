@@ -6,7 +6,7 @@ const quoteStore = useQuoteStore();
 
 <template>
   <div class="border border-gray-200 p-4 rounded-lg flex flex-col items-center basis-xs">
-    <h3 class="uppercase border-b pb-1 mb-4">State Management</h3>
+    <h3 class="border-b pb-1 mb-4">Pinia</h3>
     <input
       v-model="quoteStore.quote"
       type="text"

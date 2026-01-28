@@ -43,6 +43,17 @@ Maybe I will create a Node script for removing those files. Yeah, that's a good 
 
 - [VueUse](https://vueuse.org/)
 
+### Top 8 VueUse composables
+
+- `useAsyncState` - Simplifying try...catch
+- `useClipboard` - Reactive Clipboard API
+- `useDateFormat` - simple date formatting
+- `useDebounceFn` - Debounce execution of a function
+- `useLocalStorage` - Reactive localStorage
+- `useMediaQuery` - Reactive media query
+- `useOnClickOutside` - Very useful for dropdown or modal
+- `useTimeoutFn` - Auto clean up timeout
+
 #### Todos
 
 - [x] JSDoc (where it needed)
@@ -64,6 +75,6 @@ Maybe I will create a Node script for removing those files. Yeah, that's a good 
 - [ ] add to npm repo
 - [ ] add layout
 - [ ] add vee validate
-- [ ] add vueuse localStorage example
-- [ ] add vueuse onClickOutside example
+- [x] add vueuse localStorage example
+- [x] add vueuse onClickOutside example
 - [ ] add vueuse useDateFormat example

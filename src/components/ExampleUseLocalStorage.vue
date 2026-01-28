@@ -29,11 +29,12 @@ onMounted(() => {
 
 <template>
   <div class="border border-gray-200 p-4 rounded-lg flex flex-col items-center basis-xs">
-    <h3 class="uppercase border-b pb-1 mb-4">VueUse On Click Outside</h3>
+    <h3 class="border-b pb-1 mb-4">useLocalStorage</h3>
     <div class="text-center">
       <input
         v-model="textInput"
         type="text"
+        placeholder="Type any string here"
         class="border border-gray-300 rounded px-2 py-1 w-80"
       />
       <button

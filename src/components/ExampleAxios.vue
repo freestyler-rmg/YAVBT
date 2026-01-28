@@ -1,37 +1,35 @@
 <script setup lang="ts">
 // 📜 CODE BLOCK - init
 import axios from 'axios';
+import { useAsyncState } from '@vueuse/core';
 import type { DogApiResponse } from '@/types/api';
 
-// 📜 CODE BLOCK - state management example
-const dogPicture = ref<string>('');
-const isLoading = ref<boolean>(true);
+// 📜 CODE BLOCK - API fetch
+// By default, useAsyncState executes on component mount
+const {
+  state: dogPicture,
+  isLoading: isLoadingDog,
+  error
+} = useAsyncState(async () => {
+  const res = await axios.get<DogApiResponse>('https://random.dog/woof.json');
+  return res.data.url;
+}, '');
+
+// 📜 CODE BLOCK - rendering
 const isRendering = ref<boolean>(true);
 
-const isLoadingMedia = computed(() => isLoading.value || isRendering.value);
+const isLoadingMedia = computed(() => isLoadingDog.value || isRendering.value);
 
 const mediaType = computed(() => utilMediaCheck(dogPicture.value));
 
 function renderingIsDone() {
   isRendering.value = false;
 }
-
-onMounted(() => {
-  axios
-    .get<DogApiResponse>('https://random.dog/woof.json')
-    .then((response) => {
-      dogPicture.value = response.data.url;
-      isLoading.value = false;
-    })
-    .catch((error) => {
-      console.error('Error fetching dog picture:', error);
-    });
-});
 </script>
 
 <template>
   <div class="border border-gray-200 p-4 rounded-lg flex flex-col items-center basis-xs">
-    <h3 class="uppercase border-b pb-1 mb-4">Axios</h3>
+    <h3 class="border-b pb-1 mb-4">Axios + useAsyncState</h3>
     <div class="w-full flex flex-col items-center">
       <div v-if="isLoadingMedia" class="w-full animate-pulse">
         <div class="w-full block h-30 bg-gray-300"></div>
@@ -53,6 +51,9 @@ onMounted(() => {
         class="h-40"
         autoplay
       />
+      <p v-if="error" class="text-red-500">
+        {{ error.message }}
+      </p>
     </div>
   </div>
 </template>

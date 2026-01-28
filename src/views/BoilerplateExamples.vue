@@ -3,8 +3,9 @@
 import ExampleComposable from '../components/ExampleComposable.vue';
 import ExampleStateManagement from '../components/ExampleStateManagement.vue';
 import ExampleAxios from '../components/ExampleAxios.vue';
-import ExampleVueuseClickOutside from '@/components/ExampleVueuseClickOutside.vue';
-import ExampleVueuseLocalStorage from '@/components/ExampleVueuseLocalStorage.vue';
+import ExampleOnClickOutside from '@/components/ExampleOnClickOutside.vue';
+import ExampleUseLocalStorage from '@/components/ExampleUseLocalStorage.vue';
+import ExampleUseDateFormat from '@/components/ExampleUseDateFormat.vue';
 import { useDefaultHead } from '../composables/useDefaultHead';
 
 useDefaultHead({
@@ -21,9 +22,11 @@ useDefaultHead({
 
       <ExampleAxios />
 
-      <ExampleVueuseClickOutside />
+      <ExampleOnClickOutside />
 
-      <ExampleVueuseLocalStorage />
+      <ExampleUseLocalStorage />
+
+      <ExampleUseDateFormat />
     </div>
     <div class="mt-4">
       <RouterLink
