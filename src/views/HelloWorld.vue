@@ -9,7 +9,7 @@ const quoteStore = useQuoteStore();
 import { useDefaultHead } from '../composables/useDefaultHead';
 
 useDefaultHead({
-  siteName: 'Yet Another Vue Boilerplate Template'
+  siteName: 'Yet Another Vue 3 Boilerplate Template'
 });
 </script>
 

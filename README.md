@@ -1,4 +1,4 @@
-# Yet Another Vue 3 Boilerplate Template
+# Yet Another Vue 3 Boilerplate Template v0.5.0
 
 It's kinda a hassle to set up every Vue SPA project from zero. The purpose of this boilerplate is that it can be a "cheatsheet" and a learning material for best practices in Vue structure.
 
@@ -12,6 +12,7 @@ Clone this repo and just do a `pnpm install`. After I finish ogling my awesome c
 2. Remove the content of 'components' folder
 3. Remove 'composables/colorRange.ts'
 4. Clean up the 'router/routes.ts' routing
+5. To be continue...
 
 Maybe I will create a Node script for removing those files. Yeah, that's a good idea.
 
