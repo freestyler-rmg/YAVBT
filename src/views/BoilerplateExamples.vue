@@ -18,21 +18,21 @@ useDefaultHead({
 <template>
   <div class="min-h-screen p-4">
     <div class="grid grid-flow-row grid-cols-[repeat(auto-fit,360px)] gap-4 justify-center">
+      <ExampleAssets />
+
       <ExampleComposable />
 
       <ExampleStateManagement />
 
       <ExampleAxios />
 
+      <ExampleVeeValidate />
+
       <ExampleOnClickOutside />
 
       <ExampleUseLocalStorage />
 
       <ExampleUseDateFormat />
-
-      <ExampleAssets />
-
-      <ExampleVeeValidate />
     </div>
     <div class="mt-4">
       <RouterLink

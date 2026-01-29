@@ -1,8 +1,8 @@
 import { defineStore } from 'pinia';
 
 export const useQuoteStore = defineStore('quote', () => {
-  const quote = ref("Money ain't got no owners, just spenders.");
-  const author = ref('Omar Little');
+  const quote = ref('Yet Another Vue Boilerplate Template');
+  const author = ref('By RxMxG');
 
   return {
     quote,

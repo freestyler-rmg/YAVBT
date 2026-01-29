@@ -2,7 +2,7 @@
 import { useDateFormat, useNow } from '@vueuse/core';
 
 const currentDate = useNow();
-const formattedDate = useDateFormat(currentDate, 'DD MMMM YYYY HH:mm:ss');
+const formattedDate = useDateFormat(currentDate, 'YYYY-MM-DD HH:mm:ss');
 const formattedLocaleDate = useDateFormat(currentDate, 'dddd, DD MMMM YYYY', {
   locales: 'de-DE'
 });

@@ -41,7 +41,11 @@ Maybe I will create a Node script for removing those files. Yeah, that's a good 
 
 - [Vee Validate](https://vee-validate.logaretm.com/v4/)
 
+  The most popular Vue validation library with documentation that insist giving me tutorial using Option API first. Oh, and guess what? The documentation is confusing too!
+
 - [Vue Router](https://router.vuejs.org/)
+
+  From the welcome page: Expressive, configurable and convenient routing for Vue.js. Expressive?
 
 - [VueUse](https://vueuse.org/)
 
@@ -81,7 +85,7 @@ Maybe I will create a Node script for removing those files. Yeah, that's a good 
 - [x] display image from assets and public folder
 - [ ] create a script to 'reset' this template
 - [ ] add to npm repo
-- [ ] add layout
+- [ ] add layout example
 - [x] add vee validate
 - [x] add vueuse localStorage example
 - [x] add vueuse onClickOutside example

@@ -38,14 +38,14 @@ onMounted(() => {
         class="border border-gray-300 rounded px-2 py-1 w-80"
       />
       <button
-        class="rounded bg-emerald-700 text-white px-4 py-2 cursor-pointer mt-2"
+        class="rounded bg-emerald-700 text-white px-4 py-2 cursor-pointer mt-2 hover:bg-emerald-800"
         @click="saveToLocalStorage"
       >
         Save to Local Storage
       </button>
       <br />
       <button
-        class="rounded text-sm px-2 py-1 text-red-700 border border-red-700 mt-2"
+        class="rounded text-sm px-2 py-1 text-red-700 border border-red-700 mt-2 hover:bg-red-100 cursor-pointer"
         @click="removeLocalStorage"
       >
         Remove key from localStorage

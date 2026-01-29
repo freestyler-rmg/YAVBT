@@ -9,7 +9,7 @@ const quoteStore = useQuoteStore();
 import { useDefaultHead } from '../composables/useDefaultHead';
 
 useDefaultHead({
-  siteName: 'Hello World!'
+  siteName: 'Yet Another Vue Boilerplate Template'
 });
 </script>
 
@@ -17,7 +17,7 @@ useDefaultHead({
   <div
     class="flex flex-col justify-center items-center min-h-screen bg-linear-to-r from-gray-950 to-blue-600 p-3"
   >
-    <simple-prop msg="Hello World!" />
+    <simple-prop msg="YAVBT" />
     <simple-named-slot class="text-center">
       {{ quoteStore.quote }}
       <template v-slot:subtitle>{{ quoteStore.author }}</template>
