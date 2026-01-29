@@ -17,7 +17,7 @@ Maybe I will create a Node script for removing those files. Yeah, that's a good 
 
 ### What Is Included and What Is That?
 
-- Axios
+- [Axios](https://axios-http.com/)
 
 - [Eslint](https://eslint.org/)
 
@@ -39,9 +39,17 @@ Maybe I will create a Node script for removing those files. Yeah, that's a good 
 
   Used for auto import Vue APIs (so I don't need to write `import { ref } from 'vue'`) and everything inside `\utils\` folder. I added 'util' suffix on each exported variables / functions, so I don't confused where the hell these codes comes from.
 
+- [Vee Validate](https://vee-validate.logaretm.com/v4/)
+
 - [Vue Router](https://router.vuejs.org/)
 
 - [VueUse](https://vueuse.org/)
+
+  The Swiss Army Knife of Vue composition utilities with confusing documentation.
+
+- [yup](https://github.com/jquense/yup)
+
+  Yup, I kinda understand what is this for. Instead of writing regex manually for form validation, I can use yup's methods and chain it. Yup, it's kinda interesting.
 
 ### Top 8 VueUse composables
 
@@ -70,11 +78,11 @@ Maybe I will create a Node script for removing those files. Yeah, that's a good 
 - [x] example for typing
 - [ ] sfc example with defineModel
 - [x] use @ for absolute path
-- [ ] display image from assets and public folder
+- [x] display image from assets and public folder
 - [ ] create a script to 'reset' this template
 - [ ] add to npm repo
 - [ ] add layout
-- [ ] add vee validate
+- [x] add vee validate
 - [x] add vueuse localStorage example
 - [x] add vueuse onClickOutside example
-- [ ] add vueuse useDateFormat example
+- [x] add vueuse useDateFormat example

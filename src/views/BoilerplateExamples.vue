@@ -1,12 +1,14 @@
 <script setup lang="ts">
 // 📜 CODE BLOCK - init
+import { useDefaultHead } from '../composables/useDefaultHead';
 import ExampleComposable from '../components/ExampleComposable.vue';
 import ExampleStateManagement from '../components/ExampleStateManagement.vue';
 import ExampleAxios from '../components/ExampleAxios.vue';
 import ExampleOnClickOutside from '@/components/ExampleOnClickOutside.vue';
 import ExampleUseLocalStorage from '@/components/ExampleUseLocalStorage.vue';
 import ExampleUseDateFormat from '@/components/ExampleUseDateFormat.vue';
-import { useDefaultHead } from '../composables/useDefaultHead';
+import ExampleAssets from '@/components/ExampleAssets.vue';
+import ExampleVeeValidate from '@/components/ExampleVeeValidate.vue';
 
 useDefaultHead({
   siteName: 'Boilerplate Examples'
@@ -27,6 +29,10 @@ useDefaultHead({
       <ExampleUseLocalStorage />
 
       <ExampleUseDateFormat />
+
+      <ExampleAssets />
+
+      <ExampleVeeValidate />
     </div>
     <div class="mt-4">
       <RouterLink
