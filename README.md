@@ -90,3 +90,7 @@ Maybe I will create a Node script for removing those files. Yeah, that's a good 
 - [x] add vueuse localStorage example
 - [x] add vueuse onClickOutside example
 - [x] add vueuse useDateFormat example
+
+##### Footnote
+
+Other than me, I hope there are at least 5 people out there that find this useful 🤞
