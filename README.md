@@ -120,13 +120,14 @@ Maybe I will create a Node script for removing those files. Yeah, that's a good 
 
 #### Scripts
 
-| Script              | Action                           |
-| ------------------- | -------------------------------- |
-| `pnpm install`      | Install the project dependencies |
-| `pnpm run dev`      | Runs the app in development mode |
-| `pnpm run build`    | Builds the application           |
-| `pnpm run lint`     | Runs ESLint                      |
-| `pnpm run prettier` | Runs prettier for `src/` folder  |
+| Script                | Action                              |
+| --------------------- | ----------------------------------- |
+| `pnpm install`        | Install the project dependencies    |
+| `pnpm run dev`        | Runs the app in development mode    |
+| `pnpm run build`      | Builds the application              |
+| `pnpm run lint`       | Runs ESLint                         |
+| `pnpm run prettier`   | Runs prettier for `src/` folder     |
+| `pnpm run type-check` | Runs vue-tsc for checking TS typing |
 
 ## 📝 Todos
 
