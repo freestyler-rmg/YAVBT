@@ -2,6 +2,7 @@ import js from '@eslint/js';
 import globals from 'globals';
 import tseslint from 'typescript-eslint';
 import pluginVue from 'eslint-plugin-vue';
+import vueParser from 'vue-eslint-parser';
 import json from '@eslint/json';
 import markdown from '@eslint/markdown';
 import css from '@eslint/css';
@@ -17,7 +18,9 @@ export default defineConfig([
       '.eslintrc-auto-import.json',
       '.vscode/**',
       'README.md',
-      'package.json'
+      'package.json',
+      'tsconfig.app.json',
+      'tsconfig.node.json'
     ]
   },
   {
@@ -34,7 +37,18 @@ export default defineConfig([
   tseslint.configs.recommended,
   {
     files: ['**/*.vue'],
-    languageOptions: { parserOptions: { parser: tseslint.parser } }
+    plugins: { vue: pluginVue },
+    languageOptions: {
+      globals: {
+        ...globals.browser,
+        ...autoImportGlobals.globals
+      },
+      parser: vueParser,
+      parserOptions: {
+        parser: '@typescript-eslint/parser',
+        sourceType: 'module'
+      }
+    }
   },
   {
     files: ['**/*.json'],
