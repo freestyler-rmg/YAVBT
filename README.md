@@ -1,13 +1,30 @@
 <div>
   <h1>Yet Another Vue 3 Boilerplate Template v0.5.0</h1>
-  [![repo-size](https://img.shields.io/github/repo-size/freestyler-rmg/YAVBT.svg)](repo-size)
-  [![last-commit](https://img.shields.io/github/last-commit/freestyler-rmg/YAVBT.svg)](last-commit)
+  <a href="repo-size">
+    <img alt="repo-size" src="https://img.shields.io/github/repo-size/freestyler-rmg/YAVBT.svg" />
+  </a>
+  <a href="last-commit">
+    <img alt="last-commit" src="https://img.shields.io/github/last-commit/freestyler-rmg/YAVBT.svg" />
+  </a>
   <br /><br />
 </div>
 
 It's kinda a hassle to set up every Vue SPA project from zero. The purpose of this boilerplate is that it can be a "cheatsheet" and a learning material for best practices in Vue structure.
 
 So every time I forget how to use certain Vue features or libraries, I can go back to this template and re-learn how things work.
+
+### 📑 Table of Contents
+
+- [⛓️ What Is Included and What Is That?](#-what-is-included-and-what-is-that)
+- [🔝 Top 8 VueUse composables](#-top-8-vueuse-composables)
+- [📂 Project Structure](#-project-structure)
+  - [Further Structure for Components Folder](#-further-structure-for-components-folder)
+- [❓How to Use This Boilerplate Template?](#-how-to-use-this-boilerplate-template)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Scripts](#scripts)
+- [📝 Todos](#-todos)
+- [🤝 License](#-license)
 
 ## ⛓️ What Is Included and What Is That?
 
@@ -105,12 +122,13 @@ Maybe I will create a Node script for removing those files. Yeah, that's a good 
 
 #### Scripts
 
-|---|---|
-| `pnpm install` | Install the project dependencies |
-| `pnpm run dev` | Runs the app in development mode |
-| `pnpm run build` | Builds the application |
-| `pnpm run lint` | Runs ESLint |
-| `pnpm run prettier` | Runs prettier for `src/` folder |
+| Script              | Action                           |
+| ------------------- | -------------------------------- |
+| `pnpm install`      | Install the project dependencies |
+| `pnpm run dev`      | Runs the app in development mode |
+| `pnpm run build`    | Builds the application           |
+| `pnpm run lint`     | Runs ESLint                      |
+| `pnpm run prettier` | Runs prettier for `src/` folder  |
 
 ## 📝 Todos
 
@@ -138,7 +156,7 @@ Maybe I will create a Node script for removing those files. Yeah, that's a good 
 - [ ] add beforeRoute example
 - [ ] add layout example
 
-## 📝 License
+## 🤝 License
 
 This project is licensed under the [MIT](./LICENSE) License.
 
