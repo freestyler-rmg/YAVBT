@@ -2,6 +2,7 @@ import js from '@eslint/js';
 import globals from 'globals';
 import tseslint from 'typescript-eslint';
 import pluginVue from 'eslint-plugin-vue';
+import vueParser from 'vue-eslint-parser';
 import json from '@eslint/json';
 import markdown from '@eslint/markdown';
 import css from '@eslint/css';
@@ -10,6 +11,18 @@ import prettier from 'eslint-config-prettier';
 import autoImportGlobals from './.eslintrc-auto-import.json' with { type: 'json' };
 
 export default defineConfig([
+  {
+    ignores: [
+      'node_modules/**',
+      'dist/**',
+      '.eslintrc-auto-import.json',
+      '.vscode/**',
+      'README.md',
+      'package.json',
+      'tsconfig.app.json',
+      'tsconfig.node.json'
+    ]
+  },
   {
     files: ['**/*.{js,mjs,cjs,ts,mts,cts,vue}'],
     plugins: { js },
@@ -22,10 +35,20 @@ export default defineConfig([
     }
   },
   tseslint.configs.recommended,
-  pluginVue.configs['flat/essential'],
   {
     files: ['**/*.vue'],
-    languageOptions: { parserOptions: { parser: tseslint.parser } }
+    plugins: { vue: pluginVue },
+    languageOptions: {
+      globals: {
+        ...globals.browser,
+        ...autoImportGlobals.globals
+      },
+      parser: vueParser,
+      parserOptions: {
+        parser: '@typescript-eslint/parser',
+        sourceType: 'module'
+      }
+    }
   },
   {
     files: ['**/*.json'],
