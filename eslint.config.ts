@@ -11,6 +11,16 @@ import autoImportGlobals from './.eslintrc-auto-import.json' with { type: 'json'
 
 export default defineConfig([
   {
+    ignores: [
+      'node_modules/**',
+      'dist/**',
+      '.eslintrc-auto-import.json',
+      '.vscode/**',
+      'README.md',
+      'package.json'
+    ]
+  },
+  {
     files: ['**/*.{js,mjs,cjs,ts,mts,cts,vue}'],
     plugins: { js },
     extends: ['js/recommended'],
@@ -22,7 +32,6 @@ export default defineConfig([
     }
   },
   tseslint.configs.recommended,
-  pluginVue.configs['flat/essential'],
   {
     files: ['**/*.vue'],
     languageOptions: { parserOptions: { parser: tseslint.parser } }
