@@ -36,6 +36,52 @@ So every time I forget how to use certain Vue features or library, I can go back
 - `useOnClickOutside` - Very useful for dropdown or modal
 - `useTimeoutFn` - Auto clean up timeout
 
+## 📂 Project Structure
+
+```
+YAVBT/
+├── src/
+│   ├── components/          # Reusable Vue components. Use
+│   │   ├── Example*.vue     # Example components (remove these)
+│   │   └── Simple*.vue      # Simple example components (remove these)
+│   ├── composables/         # Reusable composition functions
+│   │   ├── colorRange.ts    # Example composable (remove these)
+│   │   └── useDefaultHead.ts # Update the title value as needed
+│   ├── constants/           # Application constants
+│   │   └── etc.ts            # Example for constant (remove these)
+│   ├── stores/              # Pinia state management
+│   │   └── quote.ts        # Example for how to write Pinia (remove these)
+│   ├── router/              # Vue Router configuration
+│   │   ├── index.ts  # Main Vue Router logic
+│   │   └── routes.ts # Add the routings here
+│   ├── types/               # TypeScript type definitions
+│   │   └── api.ts  # Example for how to typing API response (remove these)
+│   ├── utils/               # Utility  functions (auto-imported)
+│   │   └── ExtensionCheck.ts # Example for utility (remove these)
+│   ├── views/               # Page components
+│   │   ├── BoilerplateExamples.vue # (remove these)
+│   │   └── HelloWorld.vue # (remove these)
+│   ├── assets/              # Static assets
+│   │   ├── css/
+│   │   │   └── style.css # Add new css files and then import them into this file
+│   │   └── images/
+│   ├── App.vue              # Root component
+│   ├── main.ts              # Application entry point
+│   └── auto-imports.d.ts    # Auto-import type definitions
+├── public/                  # Public static assets
+│   ├── vite.svg
+│   └── red-panda-public.jpg
+├── index.html               # HTML entry point
+├── package.json             # Project version and dependencies
+└── README.md                # This file
+```
+
+### Further Structure for Components Folder
+
+Use Feature-Based (Domain-Driven) for medium to large projects, example: `/src/components/auth/`, `/src/components/products/`, `/src/components/cart/`.
+
+Or use Component Type Hierarchy, example: `/components/common/`, `/components/forms/`, `/components/layouts/`
+
 ## ❓ How to Use This Boilerpate Template?
 
 ### Prerequisites
@@ -48,9 +94,12 @@ Clone this repo and just do a `pnpm install`. After I finish ogling my awesome c
 
 1. Remove the content of 'views' folder
 2. Remove the content of 'components' folder
-3. Remove 'composables/colorRange.ts'
-4. Clean up the 'router/routes.ts' routing
-5. To be continue...
+3. Remove the content of 'stores' folder
+4. Remove the content of 'types' folder
+5. Remove 'composables/colorRange.ts' file
+6. Clean up the 'router/routes.ts' routings
+7. Remove the content of 'utils' folder
+8. Remove the content of 'constants' folder
 
 Maybe I will create a Node script for removing those files. Yeah, that's a good idea.
 
@@ -77,6 +126,8 @@ Maybe I will create a Node script for removing those files. Yeah, that's a good 
 - [x] add vueuse localStorage example
 - [x] add vueuse onClickOutside example
 - [x] add vueuse useDateFormat example
+- [ ] add beforeRoute example
+- [ ] add layout example
 
 ## 📝 License
 
