@@ -52,7 +52,7 @@ function renderingIsDone() {
         autoplay
       />
       <p v-if="error" class="text-red-500">
-        {{ error.message }}
+        {{ (error as Error).message }}
       </p>
     </div>
   </div>
