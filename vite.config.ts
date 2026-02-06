@@ -6,7 +6,7 @@ import AutoImport from 'unplugin-auto-import/vite';
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/YAVBT', // set base path for GitHub Pages deployment
+  base: '/YAVBT/', // set base path for GitHub Pages deployment
   plugins: [
     vue(),
     tailwindcss(),

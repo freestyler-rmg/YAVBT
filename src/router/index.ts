@@ -5,7 +5,7 @@ const router = createRouter({
   scrollBehavior() {
     return { top: 0 };
   },
-  history: createWebHistory(),
+  history: createWebHistory('/YAVBT/'),
   routes
 });
 
