@@ -61,7 +61,7 @@ YAVBT/
 │   │   │   └── style.css             # Add new css files and then import them into this file
 │   │   └── images/
 │   │       └── ...
-│   ├── components/                   # Reusable Vue components. Use
+│   ├── components/                   # Reusable Vue components
 │   │   ├── Example*.vue              # Example components (remove these)
 │   │   └── Simple*.vue               # Simple example components (remove these)
 │   ├── composables/                  # Reusable composition functions
@@ -101,7 +101,7 @@ Or use Component Type Hierarchy, example: `/components/common/`, `/components/fo
 
 ### Prerequisites
 
-Currently I'm using [Node Js](https://nodejs.org/en/) version `v23.3.0`.
+Currently I'm using [Node Js](https://nodejs.org/en/) version `v23.3.0` and [PNPM](https://pnpm.io/) version `v10.28.1`.
 
 ### Installation
 
@@ -131,35 +131,30 @@ Maybe I will create a Node script for removing those files. Yeah, that's a good 
 
 ## 📝 Todos
 
-- [x] JSDoc (where it needed)
-- [x] sfc example
-- [x] have example for routing
-- [x] composable example
-- [x] state management example
-- [x] axios example
-- [x] util example
-- [x] make utils available globally
-- [x] able to change head title
-- [ ] test unit
-- [x] how to use this template
-- [x] example for typing
-- [ ] sfc example with defineModel
-- [x] use @ for absolute path
-- [x] display image from assets and public folder
-- [ ] create a script to 'reset' this template
+- [ ] add beforeRoute example
+- [ ] add github.io page
 - [ ] add layout example
+- [ ] create a script to 'reset' this template
+- [ ] sfc example with defineModel
+- [ ] test unit
+- [x] able to change head title
 - [x] add vee validate
 - [x] add vueuse localStorage example
 - [x] add vueuse onClickOutside example
 - [x] add vueuse useDateFormat example
-- [ ] add beforeRoute example
-- [ ] add layout example
-- [ ] add github.io page
+- [x] axios example
+- [x] composable example
+- [x] display image from assets and public folder
+- [x] example for typing
+- [x] have example for routing
+- [x] how to use this template
+- [x] JSDoc (where it needed)
+- [x] make utils available globally
+- [x] sfc example
+- [x] state management example
+- [x] use @ for absolute path
+- [x] util example
 
 ## 🤝 License
 
 This project is licensed under the [MIT](./LICENSE) License.
-
-##### Footnote
-
-Other than me, I hope there are at least 5 people out there that find this useful 🤞
