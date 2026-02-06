@@ -120,6 +120,8 @@ Maybe I will create a Node script for removing those files. Yeah, that's a good 
 
 #### Scripts
 
+I use `pnpm run` to distinguish scripts from the `pnpm` CLI commands.
+
 | Script                | Action                              |
 | --------------------- | ----------------------------------- |
 | `pnpm install`        | Install the project dependencies    |
