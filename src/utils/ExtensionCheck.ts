@@ -2,7 +2,7 @@ import { FILETYPE } from '../constants/etc';
 
 export const utilMediaCheck = (filename: string) => {
   const filenameArray = filename.split('.');
-  const lastElement = filenameArray[filenameArray.length - 1];
+  const lastElement = filenameArray[filenameArray.length - 1]?.toLowerCase();
 
-  return FILETYPE[lastElement];
+  return FILETYPE[lastElement as keyof typeof FILETYPE];
 };

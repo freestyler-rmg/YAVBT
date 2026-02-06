@@ -132,12 +132,12 @@ Maybe I will create a Node script for removing those files. Yeah, that's a good 
 ## 📝 Todos
 
 - [ ] add beforeRoute example
-- [ ] add github.io page
 - [ ] add layout example
 - [ ] create a script to 'reset' this template
 - [ ] sfc example with defineModel
 - [ ] test unit
 - [x] able to change head title
+- [x] add github.io page
 - [x] add vee validate
 - [x] add vueuse localStorage example
 - [x] add vueuse onClickOutside example

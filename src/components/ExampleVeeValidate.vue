@@ -1,17 +1,24 @@
 <script setup lang="ts">
+// 📜 CODE BLOCK - imports
 import { Form, Field, ErrorMessage, useForm, useField } from 'vee-validate';
 import * as yup from 'yup';
+import { toTypedSchema } from '@vee-validate/yup';
+import type { InferType } from 'yup';
 
 // 📜 CODE BLOCK - validation schema
 const validationSchema = yup.object({
   email: yup.string().required('Email is required').email('Email must be valid')
 });
 
+// 📜 CODE BLOCK - typing
+const typedSchema = toTypedSchema(validationSchema);
+type FormValues = InferType<typeof validationSchema>;
+
 // 📜 CODE BLOCK - composable example
 const displayTextComposable = ref('');
 
 const { handleSubmit, errors } = useForm({
-  validationSchema
+  validationSchema: typedSchema
 });
 
 const disableSubmitComposable = computed(
@@ -28,9 +35,10 @@ const onSubmitComposable = handleSubmit((values) => {
 // 📜 CODE BLOCK - component example
 const displayTextComponent = ref('');
 
-function onSubmitComponent(values) {
-  displayTextComponent.value = `Submitted email: ${values.email}`;
-}
+const onSubmitComponent = (values: Record<string, unknown>) => {
+  const typedValues = values as FormValues;
+  displayTextComponent.value = `Submitted email: ${typedValues.email}`;
+};
 </script>
 
 <template>
@@ -67,7 +75,7 @@ function onSubmitComponent(values) {
 
     <div class="w-full text-center">
       <p>Components</p>
-      <Form @submit="onSubmitComponent" :validation-schema="validationSchema">
+      <Form @submit="onSubmitComponent" :validation-schema="typedSchema">
         <template #default="{ values, errors }">
           <Field
             name="email"
