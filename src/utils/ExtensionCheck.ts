@@ -1,4 +1,4 @@
-import { FILETYPE } from '../constants/etc';
+import { FILETYPE } from '@/constants/example/etc';
 
 export const utilMediaCheck = (filename: string) => {
   const filenameArray = filename.split('.');

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 // 📜 CODE BLOCK - composable example
-import { useColorRange } from '../composables/colorRange.ts';
+import { useColorRange } from '@/composables/example/colorRange.ts';
 const { rangeMin, rangeMax, colorRed, colorGreen, colorBlue, colorValue } = useColorRange();
 </script>
 
