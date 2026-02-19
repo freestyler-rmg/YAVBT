@@ -17,16 +17,18 @@ type FormValues = InferType<typeof validationSchema>;
 // 📜 CODE BLOCK - composable example
 const displayTextComposable = ref('');
 
+// Ref: https://vee-validate.logaretm.com/v4/api/use-form
 const { handleSubmit, errors } = useForm({
   validationSchema: typedSchema
 });
 
+// The useField parameter 'email' match the validation schema key
+// Ref: https://vee-validate.logaretm.com/v4/api/use-field/
+const { value: emailComposable } = useField('email');
+
 const disableSubmitComposable = computed(
   () => Object.keys(errors.value).length > 0 || !emailComposable.value
 );
-
-// The useField parameter 'email' match the validation schema key
-const { value: emailComposable } = useField('email');
 
 const onSubmitComposable = handleSubmit((values) => {
   displayTextComposable.value = `Submitted email: ${values.email}`;
