@@ -24,7 +24,6 @@ declare global {
   const isRef: typeof import('vue').isRef
   const isShallow: typeof import('vue').isShallow
   const markRaw: typeof import('vue').markRaw
-  const mediaCheck: typeof import('./utils/ExtensionCheck').mediaCheck
   const nextTick: typeof import('vue').nextTick
   const onActivated: typeof import('vue').onActivated
   const onBeforeMount: typeof import('vue').onBeforeMount

@@ -2,7 +2,7 @@
 // 📜 CODE BLOCK - init
 import axios from 'axios';
 import { useAsyncState } from '@vueuse/core';
-import type { DogApiResponse } from '@/types/api';
+import type { DogApiResponse } from '@/types/example/api';
 
 // 📜 CODE BLOCK - API fetch
 // By default, useAsyncState executes on component mount

@@ -1,14 +1,14 @@
 <script setup lang="ts">
 // 📜 CODE BLOCK - init
-import { useDefaultHead } from '../composables/useDefaultHead';
-import ExampleComposable from '../components/ExampleComposable.vue';
-import ExampleStateManagement from '../components/ExampleStateManagement.vue';
-import ExampleAxios from '../components/ExampleAxios.vue';
-import ExampleOnClickOutside from '@/components/ExampleOnClickOutside.vue';
-import ExampleUseLocalStorage from '@/components/ExampleUseLocalStorage.vue';
-import ExampleUseDateFormat from '@/components/ExampleUseDateFormat.vue';
-import ExampleAssets from '@/components/ExampleAssets.vue';
-import ExampleVeeValidate from '@/components/ExampleVeeValidate.vue';
+import { useDefaultHead } from '@/composables/useDefaultHead';
+import ExampleComposable from '@/components/example/ExampleComposable.vue';
+import ExampleStateManagement from '@/components/example/ExampleStateManagement.vue';
+import ExampleAxios from '@/components/example/ExampleAxios.vue';
+import ExampleOnClickOutside from '@/components/example/ExampleOnClickOutside.vue';
+import ExampleUseLocalStorage from '@/components/example/ExampleUseLocalStorage.vue';
+import ExampleUseDateFormat from '@/components/example/ExampleUseDateFormat.vue';
+import ExampleAssets from '@/components/example/ExampleAssets.vue';
+import ExampleVeeValidate from '@/components/example/ExampleVeeValidate.vue';
 
 useDefaultHead({
   siteName: 'Boilerplate Examples'

@@ -1,12 +1,12 @@
 <script setup lang="ts">
 // 📜 CODE BLOCK - init
-import SimpleProp from '../components/SimpleProp.vue';
-import SimpleNamedSlot from '../components/SimpleNamedSlot.vue';
-import { useQuoteStore } from '../stores/quote';
+import SimpleProp from '@/components/example/SimpleProp.vue';
+import SimpleNamedSlot from '@/components/example/SimpleNamedSlot.vue';
+import { useQuoteStore } from '@/stores/example/quote';
 const quoteStore = useQuoteStore();
 
 // 📜 CODE BLOCK - head content
-import { useDefaultHead } from '../composables/useDefaultHead';
+import { useDefaultHead } from '@/composables/useDefaultHead';
 
 useDefaultHead({
   siteName: 'Yet Another Vue 3 Boilerplate Template'

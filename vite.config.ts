@@ -15,7 +15,7 @@ export default defineConfig(({ mode }) => {
       tailwindcss(),
       AutoImport({
         imports: ['vue'], // auto-import ref, computed, etc.
-        dirs: ['src/utils'], // auto-import anything exported from utils
+        dirs: ['src/utils/**/*'], // auto-import anything exported from utils
         dts: 'src/auto-imports.d.ts',
         eslintrc: {
           enabled: true,

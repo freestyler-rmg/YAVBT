@@ -1,6 +1,6 @@
 <script setup lang="ts">
 // 📜 CODE BLOCK - state management example
-import { useQuoteStore } from '../stores/quote.ts';
+import { useQuoteStore } from '@/stores/example/quote';
 const quoteStore = useQuoteStore();
 </script>
 

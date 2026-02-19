@@ -1,17 +1,5 @@
-import HelloWorld from '../views/HelloWorld.vue';
-import Boilerplate from '../views/BoilerplateExamples.vue';
+import { example } from './example.ts';
 
-const routes = [
-  {
-    path: '/',
-    name: 'HelloWorld',
-    component: HelloWorld
-  },
-  {
-    path: '/boilerplate-examples',
-    name: 'BoilerplateExamples',
-    component: Boilerplate
-  }
-];
+const routes = [...example];
 
 export default routes;

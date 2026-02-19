@@ -1,5 +1,5 @@
 <div>
-  <h1>Yet Another Vue 3 Boilerplate Template v0.5.0</h1>
+  <h1>Yet Another Vue 3 Boilerplate Template v0.5.1</h1>
   <div>
     <img alt="repo-size" src="https://img.shields.io/github/repo-size/freestyler-rmg/YAVBT.svg" />
     <img alt="last-commit" src="https://img.shields.io/github/last-commit/freestyler-rmg/YAVBT.svg" />
@@ -60,24 +60,23 @@ YAVBT/
 │   │   ├── css/
 │   │   │   └── style.css             # Add new css files and then import them into this file
 │   │   └── images/
-│   │       └── ...
 │   ├── components/                   # Reusable Vue components
-│   │   ├── Example*.vue              # Example components (remove these)
-│   │   └── Simple*.vue               # Simple example components (remove these)
+│   │   └── example/                  # Example components (remove this folder)
 │   ├── composables/                  # Reusable composition functions
-│   │   ├── colorRange.ts             # Example composable (remove this)
+│   │   ├── example/                  # Example composable (remove this folder)
 │   │   └── useDefaultHead.ts         # Update the title value as needed
 │   ├── constants/                    # Application constants
-│   │   └── etc.ts                    # Example for constant (remove this)
+│   │   └── example/                   # Example for constant (remove this folder)
 │   ├── router/                       # Vue Router configuration
+│   │   ├── example.ts                # Example route config (remove this)
 │   │   ├── index.ts                  # Main Vue Router logic
 │   │   └── routes.ts                 # Add the routings here
 │   ├── stores/                       # Pinia state management
-│   │   └── quote.ts                  # Example for how to write Pinia (remove this)
+│   │   └── example/                  # Example for how to write Pinia (remove this folder)
 │   ├── types/                        # TypeScript type definitions
-│   │   └── api.ts                    # Example for how to typing API response (remove this)
+│   │   └── example/                   # Example for how to typing API response (remove this folder)
 │   ├── utils/                        # Utility functions (auto-imported)
-│   │   └── ExtensionCheck.ts         # Example for utility (remove this)
+│   │   └── ExtensionCheck.ts         # Example for utility (remove this if not necessary)
 │   ├── views/                        # Page components
 │   │   ├── BoilerplateExamples.vue   # (remove this)
 │   │   └── HelloWorld.vue            # (remove this)
@@ -93,9 +92,35 @@ YAVBT/
 
 ### Further Structure for Components Folder
 
-Use Feature-Based (Domain-Driven) for medium to large projects, example: `/src/components/auth/`, `/src/components/products/`, `/src/components/cart/`.
+Use Feature-Based (Domain-Driven) for medium to large projects, example: `/src/features/auth/`, `/src/features/products/`, `/src/features/cart/`.
 
-Or use Component Type Hierarchy, example: `/components/common/`, `/components/forms/`, `/components/layouts/`
+Example:
+
+```
+src/
+├── features/
+│   └── products/
+│       ├── components/
+│       │   ├── ProductCard.vue
+│       │   └── ProductImage.vue
+│       ├── pages/
+│       │   ├── ProductDetail.vue
+│       │   └── ProductList.vue
+│       ├── stores/
+│       │   └── productStore.ts
+│       ├── composables/
+│       │   └── useProductFilters.ts
+│       ├── types/
+│       │   └── product.ts
+│       └── utils/
+│           └── formatPrice.ts
+├── shared/
+│   ├── components/
+│   ├── composables/
+│   └── utils/
+```
+
+Or use Component Type Hierarchy, example: `/src/components/common/`, `/src/components/forms/`, `/src/components/layouts/`
 
 ## ❓ How to Use This Boilerplate Template?
 
@@ -108,13 +133,13 @@ Currently I'm using [Node Js](https://nodejs.org/en/) version `v23.3.0` and [PNP
 Clone this repo and just do a `pnpm install`. After I finish ogling my awesome code and remember why I'm the greatest frontend on this earth, here's the order of what I should do:
 
 1. Remove the content of 'views' folder
-2. Remove the content of 'components' folder
-3. Remove the content of 'stores' folder
-4. Remove the content of 'types' folder
-5. Remove 'composables/colorRange.ts' file
-6. Clean up the 'router/routes.ts' routings
+2. Remove the 'components/example' folder
+3. Remove the 'stores/example' folder
+4. Remove the 'types/example' folder
+5. Remove the 'composables/example' folder
+6. Remove the 'router/example.ts' file and its import in 'routes.ts'
 7. Remove the content of 'utils' folder
-8. Remove the content of 'constants' folder
+8. Remove the 'constants/example' folder
 
 Maybe I will create a Node script for removing those files. Yeah, that's a good idea.
 
@@ -135,6 +160,7 @@ I use `pnpm run` to distinguish scripts from the `pnpm` CLI commands.
 
 - [ ] add beforeRoute example
 - [ ] add layout example
+- [ ] convert every function to arrow function
 - [ ] create a script to 'reset' this template
 - [ ] sfc example with defineModel
 - [ ] test unit
